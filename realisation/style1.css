@@ -1,0 +1,216 @@
+/* 🌐 Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-image: url(images/gift2.gif);
+      background-repeat: no-repeat;
+  background-size: cover;
+    color: #f1f5f9;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* ====== 🔝 En-tête & Navigation ====== */
+  header {
+    background: #1e293b;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    display: contents;
+    z-index: 100;
+    margin: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #38bdf8;
+    color: #0f172a;
+  }
+  header img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #06b6d4;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+  }
+  
+  /* ====== 🏠 Section principale ====== */
+  main {
+    flex: 1;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Titres */
+  h1, h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.3em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+  
+  /* Paragraphes et listes */
+  p, ul {
+    font-size: 1.05em;
+  }
+  
+  ul {
+    list-style: square inside;
+    margin-left: 10px;
+    padding-left: 15px;
+  }
+  
+  /* ====== 📄 Tableau, sections du CV ====== */
+  section {
+    background: #1e293b;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* ====== ✉️ Formulaire de contact ====== */
+  form {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #94a3b8;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 6px #38bdf8;
+  }
+  
+  button {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+  }
+  
+  /* ====== ⚓ Liens ====== */
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ====== ⚙️ Pied de page ====== */
+  footer {
+    text-align: center;
+    background: #1e293b;
+    color: #94a3b8;
+    padding: 15px 0;
+    margin-top: auto;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+  }
+  
+  /* ====== 📱 Responsive Design ====== */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    main {
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  
