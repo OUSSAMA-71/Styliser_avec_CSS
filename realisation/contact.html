@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Mon site</title>
   <link rel="stylesheet" href="style.css">
+  <!--link icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
   <header>
@@ -20,31 +22,38 @@
   <main class="main-contact">
     <h1>Contactez-moi :</h1>
 
-    <section>
-      <h2>Mes coordonnées :</h2>
-          <ul>
-                <li>Email    <b>:</b><a href="mailto:oussamacharef71@example.com">oussamacharef71@example.com</a></li>
-                <li>Telephon <b>:</b><a href="tel:+212-678831471">+212-678831471</a></li>
-                <li>LinkedIn <b>:</b><a href="https://www.linkedin.com/in/oussama-oussama-079a05387/" target="_blank">linkedin</a></li>
-                <li>GitHub   <b>:</b><a href="https://github.com/OUSSAMA-71" target="_blank">GitHub</a></li>
-                <li>Instagram<b>:</b><a href="https://www.instagram.com/ousama__._?igsh=MTR6bm41MG85c3NzNg==" target="_blank">Instagram</a></li>
-        </ul>
-    </section>
+
 
     <section>
         <h2>Formulaire de contact :</h2>
-      <form>
-        <label for="nom">Nom :</label><br>
-        <input type="text" id="nom" name="nom" required><br><br>
+        <div class="form-contact">
+        <form>
+          <label for="nom">Nom :</label><br>
+          <input type="text" id="nom" name="nom" required><br><br>
+  
+          <label for="email">Email :</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+  
+          <label for="message">Message :</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+  
+          <button type="submit">Envoyer</button>
+        </form>
+        
+    </div>
+    </section>
 
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <section class="MEDIA">
+      <h2>Mes coordonnées :</h2>
+          <ul>
+                <li><a href="mailto:oussamacharef71@example.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="tel:+212-678831471"><i class="fa-solid fa-phone-volume"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/oussama-oussama-079a05387/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a></li>
+                <li><a href="https://github.com/OUSSAMA-71" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://www.instagram.com/ousama__._?igsh=MTR6bm41MG85c3NzNg==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+    </section>
 
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-        <button type="submit">Envoyer</button>
-      </form>
   </main>
 
   <footer>
